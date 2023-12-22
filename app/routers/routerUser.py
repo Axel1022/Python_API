@@ -22,13 +22,13 @@ DELETE -> Para borrar datos.
 '''
 
 # Crea una instancia de la aplicación
-router = APIRouter();
+router = APIRouter(prefix="/users", tags=["users"], responses={404:{'message':"No encontrado"}});
 userList = obtener_lista_usuarios();
 
 
 # Devuelve una lista de usuarios en formato JSON
-@router.get("/usersJson",response_model=List[User], status_code=200)
-async def users_Json():
+@router.get("/",response_model=List[User], status_code=200)
+async def users():
     '''
     Devuelve una lista de usuarios en formato JSON.
 
@@ -47,7 +47,7 @@ async def users_Json():
 
 
 # Devuelve un usuario por el ID
-@router.get("/user/{id}",response_model=User, status_code=200)
+@router.get("/{id}",response_model=User, status_code=200)
 async def user_id(id: int):
     '''
     Devuelve un usuario según su ID.
@@ -79,7 +79,7 @@ async def user_by_id(id: int = Query(..., description="ID of the user to retriev
 """
 
 # Elimina un usuario por el ID
-@router.delete("/user/{id}", status_code=200, response_model=dict)
+@router.delete("/{id}", status_code=200, response_model=dict)
 async def user_delete(id: int):
     """
     Elimina un usuario según su ID.
@@ -103,7 +103,7 @@ async def user_delete(id: int):
         raise HTTPException(status_code=404, detail=f"Usuario con ID {id} no encontrado")
 
 # Añade un nuevo usuario
-@router.post("/user",status_code=201, response_model=dict)
+@router.post("/",status_code=201, response_model=dict)
 async def user_add(user: User):
     """
     Añade un nuevo usuario al sistema.
@@ -127,7 +127,7 @@ async def user_add(user: User):
         raise HTTPException(status_code=409, detail={"Error": "Usuario no añadido", "Descripción": f"El ID: {user.id} ya existe."})
 
 #Actualizar
-@router.put("/user", status_code=200, response_model=dict)
+@router.put("/", status_code=200, response_model=dict)
 async def user_Update(user: User):
     """
     Edita un usuario en la lista basándose en su ID.

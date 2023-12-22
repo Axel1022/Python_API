@@ -5,9 +5,9 @@ import sys
 sys.path.append(r'C:\Users\IngCa\Desktop\Cursos\Python_API')
 from app.data.dataProducts import obtener_lista_productos
 
-router = APIRouter();
+router = APIRouter(prefix="/products", tags=["products"], responses={404:{"message":"No encontrado"}});
 productList = obtener_lista_productos();
 
-@router.get("/products")
-async def getProduct():
+@router.get("/")
+async def products():
     return productList

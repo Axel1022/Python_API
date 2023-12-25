@@ -1,0 +1,250 @@
+# Creado por https://www.toptal.com/developers/gitignore/api/windows,macos,linux,python
+# Editar en https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,python
+
+###Linux ###
+*~
+
+# archivos temporales que se pueden crear si un proceso todavía tiene un identificador abierto de un archivo eliminado
+.fuse_hidden*
+
+# Preferencias del directorio de KDE
+.directorio
+
+# Carpeta de basura de Linux que puede aparecer en cualquier partición o disco.
+.Basura-*
+
+# Los archivos .nfs se crean cuando se elimina un archivo abierto pero aún se accede a él
+.nfs*
+
+### Mac OS ###
+# General
+.DS_Tienda
+.AppleDoble
+.LSAnular
+
+# El icono debe terminar con dos \r
+Icono
+
+
+# Miniaturas
+._*
+
+# Archivos que pueden aparecer en la raíz de un volumen.
+.DocumentRevisions-V100
+.fseventosd
+.Foco-V100
+.Artículos Temporales
+.basura
+.VolumeIcon.icns
+.com.apple.timemachine.nopresente
+
+# Directorios potencialmente creados en recursos compartidos de AFP remotos
+.AppleDB
+.AppleDesktop
+Carpeta de papelera de red
+Artículos temporales
+.apdisk
+
+### Parche de macOS ###
+# Archivos generados por iCloud
+*.icloud
+
+### Pitón ###
+# Archivos DLL / optimizados / compilados en bytes
+__pycache__/
+*.py[bacalao]
+*$py.clase
+
+# extensiones C
+*.entonces
+
+# Distribución / embalaje
+.Pitón
+construir/
+desarrollar-huevos/
+dist/
+descargas/
+huevos/
+.huevos/
+biblioteca/
+lib64/
+partes/
+distrito/
+var/
+ruedas/
+compartir/ruedas-python/
+*.egg-info/
+.instalado.cfg
+*.huevo
+MANIFIESTO
+
+#PyInstaller
+# Normalmente estos archivos se escriben mediante un script de Python a partir de una plantilla.
+# antes de que PyInstaller construya el exe, para inyectarle la fecha/otra información.
+*.manifiesto
+*.Especificaciones
+
+# Registros del instalador
+pip-log.txt
+pip-eliminar-este-directorio.txt
+
+# Prueba unitaria / informes de cobertura
+htmlcov/
+.tox/
+.nox/
+.cobertura
+.cobertura.*
+.cache
+pruebas nasales.xml
+cobertura.xml
+*.cubrir
+*.py,cubierta
+.hipótesis/
+.pytest_cache/
+cubrir/
+
+# Traducciones
+*.mes
+*.maceta
+
+# Cosas de Django:
+*.registro
+configuración_local.py
+db.sqlite3
+db.sqlite3-diario
+
+# Cosas del matraz:
+instancia/
+.webassets-caché
+
+# Cosas chatarras:
+.rasposo
+
+# Documentación de la esfinge
+documentos/_build/
+
+#PyBuilder
+.pybuilder/
+objetivo/
+
+# Cuaderno Jupyter
+.ipynb_checkpoints
+
+# IPython
+perfil_predeterminado/
+ipython_config.py
+
+#pyenv
+# Para una biblioteca o paquete, es posible que desee ignorar estos archivos ya que el código es
+# pensado para ejecutarse en múltiples entornos; en caso contrario, consúltelos en:
+# .python-versión
+
+#pipenv
+# Según pypa/pipenv#598, se recomienda incluir Pipfile.lock en el control de versiones.
+# Sin embargo, en caso de colaboración, si hay dependencias o dependencias específicas de la plataforma
+# al no tener soporte multiplataforma, pipenv puede instalar dependencias que no funcionan o no
+# instalar todas las dependencias necesarias.
+#Pipfile.bloqueo
+
+# poesía
+# Similar a Pipfile.lock, generalmente se recomienda incluir poesía.lock en el control de versiones.
+# Esto se recomienda especialmente para paquetes binarios para garantizar la reproducibilidad y es más
+# comúnmente ignorado por las bibliotecas.
+# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poesía.bloqueo
+
+#pdm
+# Similar a Pipfile.lock, generalmente se recomienda incluir pdm.lock en el control de versiones.
+#pdm.bloqueo
+# pdm almacena configuraciones de todo el proyecto en .pdm.toml, pero se recomienda no incluirlo
+# en control de versiones.
+# https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+#PEP 582; utilizado, por ejemplo, por github.com/David-OConnor/pyflow y github.com/pdm-project/pdm
+__pypackages__/
+
+# Cosas de apio
+calendario-de-apio
+apiobeat.pid
+
+# Archivos analizados por SageMath
+*.sabio.py
+
+# Ambientes
+.env
+.venv
+entorno/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Configuración del proyecto Spyder
+.proyecto spyder
+.proyecto espía
+
+# Configuración del proyecto de cuerda
+.proyecto de cuerda
+
+# documentación mkdocs
+/sitio
+
+#mipy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Comprobador de tipo pira
+.pira/
+
+# analizador de tipo estático pytype
+.pytipo/
+
+# Símbolos de depuración de Cython
+cython_debug/
+
+#PyCharm
+# La plantilla específica de JetBrains se mantiene en un JetBrains.gitignore separado que puede
+# se encuentra en https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+# y se puede agregar al gitignore global o fusionar en este archivo. Por una política más nuclear
+# opción (no recomendada), puede descomentar lo siguiente para ignorar toda la carpeta de ideas.
+#.idea/
+
+### Parche de Python ###
+# Archivo de configuración local de poesía: https://python-poetry.org/docs/configuration/#local-configuration
+poesía.toml
+
+# fallar
+.ruff_cache/
+
+# archivos de configuración LSP
+pyrightconfig.json
+
+### Ventanas ###
+# Archivos de caché de miniaturas de Windows
+Pulgares.db
+Thumbs.db: cifrable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Archivo de volcado
+*.stackdump
+
+# Archivo de configuración de carpeta
+[Dd]esktop.ini
+
+# Papelera de reciclaje utilizada en archivos compartidos
+$RECYCLE.BIN/
+
+# Archivos del instalador de Windows
+*.taxi
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Atajos de Windows
+*.lnk
+
+# Fin de https://www.toptal.com/developers/gitignore/api/windows,macos,linux,python

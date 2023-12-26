@@ -45,7 +45,6 @@ async def users():
     else:
         return userList
 
-
 # Devuelve un usuario por el ID
 @router.get("/{id}",response_model=User, status_code=200)
 async def user_id(id: int):
@@ -150,11 +149,8 @@ async def user_Update(user: User):
     else:
         raise HTTPException(status_code=404, detail=f"User with id {user.id} not found")
 
-from fastapi import HTTPException
-
 # Edita un usuario en la lista basándose en su ID
-"""
-@app.put("/users")
+@router.put("/{id}", status_code=200, response_model=dict)
 async def user_Update(idActual: int, user: User):
     '''
     Edita un usuario en la lista basándose en su ID.
@@ -183,4 +179,4 @@ async def user_Update(idActual: int, user: User):
                 return {"message": "Usuario actualizado correctamente"}
     else:
         raise HTTPException(status_code=404, detail=f"No existe un usuario con ID {idActual}")
-"""
+

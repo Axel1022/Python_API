@@ -1,11 +1,11 @@
-¡Claro! Aquí tienes una versión modificada del README incorporando algunas de las sugerencias mencionadas:
 
 ```markdown
 # README - FastAPI Python API 🚧
 
 ## Información General 🐍
 
-Este repositorio contiene el código de una API en construcción desarrollada con FastAPI y Python. La API está diseñada para gestionar usuarios y productos, proporcionando operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre estos recursos.
+Este repositorio contiene el código de una API en construcción desarrollada con FastAPI y Python.
+La API está diseñada para gestionar usuarios y productos, proporcionando operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre estos recursos.
 
 ## Estructura del Proyecto 📂
 
@@ -17,7 +17,8 @@ El proyecto está organizado en varios módulos para una mejor estructuración y
   - **`data`**: Módulos que proporcionan funciones para obtener listas de usuarios y productos (simuladas).
   - **`utils`**: Módulos con utilidades para manipulación de datos y búsqueda.
   - **`models`**: Definición de modelos de datos utilizando Pydantic.
-- **`requirements.txt`**: Archivo que lista las dependencias del proyecto. Puedes instalarlas usando `pip install -r requirements.txt`.
+- **`requirements.txt`**: Archivo que lista las dependencias del proyecto.
+Puedes instalarlas usando `pip install -r requirements.txt`.
 
 ## Configuración y Ejecución 🚀
 

@@ -1,4 +1,4 @@
-from app.models.modelProduct import Product
+from app.db.models.modelProduct import Product
 
 def obtener_lista_productos():
     productList = [

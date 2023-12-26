@@ -1,5 +1,5 @@
 from fastapi import HTTPException;
-import models.modelProduct
+import db.models.modelProduct
 
 def buscarId(id: int, produc_list):
     """

@@ -4,9 +4,9 @@ from fastapi import APIRouter
 from fastapi import HTTPException;
 import sys
 sys.path.append(r'C:\Users\IngCa\Desktop\Cursos\Python_API')
-from app.data.dataUser import obtener_lista_usuarios
+from app.db.data.dataUser import obtener_lista_usuarios
 from app.utils.utilsUsers import buscarId, buscarUser
-from app.models.modelUser import User
+from app.db.models.modelUser import User
 from fastapi.responses import JSONResponse
 
 # Iniciar server: python -m uvicorn main:app --reload

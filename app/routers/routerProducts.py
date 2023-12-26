@@ -3,10 +3,10 @@ from typing import List
 from fastapi import APIRouter
 import sys
 sys.path.append(r'C:\products\IngCa\Desktop\Cursos\Python_API')
-from app.data.dataProducts import obtener_lista_productos
+from app.db.data.dataProducts import obtener_lista_productos
 from fastapi import HTTPException;
 #import utils.utilsProducts
-from app.models.modelProduct import Product
+from app.db.models.modelProduct import Product
 from fastapi.responses import JSONResponse
 
 '''

@@ -1,4 +1,4 @@
-from app.models.modelUser import User
+from app.db.models.modelUser import User
 
 def obtener_lista_usuarios():
     usersList = [
